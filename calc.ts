@@ -45,5 +45,6 @@ switch (result.operator) {
     break;
   default:
     console.log('Select an arithmatic function.')
+    break;
 }
 // program ends here.
