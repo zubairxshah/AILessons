@@ -14,37 +14,37 @@ choices: ["Addition", "Subtraction", "Multiplication", "Division"],
 },
 ]);
 // conditional statement
-// if (result.operator === "Addition") {
-// console.log(result.firstNumber + result.secondNumber)
-// }
-// else if (result.operator === "Subtraction")  {
+if (result.operator === "Addition") {
+console.log(result.firstNumber + result.secondNumber)
+}
+else if (result.operator === "Subtraction")  {
 
-//   (result.firstNumber - result.secondNumber);
-// } 
-// else if (result.operator === "Multiplication") {
-//   console.log(result.firstNumber * result.secondNumber);
-// } 
-// else if (result.operator === "Division") {
+  console.log(result.firstNumber - result.secondNumber);
+} 
+else if (result.operator === "Multiplication") {
+  console.log(result.firstNumber * result.secondNumber);
+} 
+else if (result.operator === "Division") {
    
-// console.log(result.firstNumber / result.secondNumber);}
-// else { console.log("Please select a valid operator")}
+console.log(result.firstNumber / result.secondNumber);}
+else { console.log("Please select a valid operator")}
 
 // Conditional statement using 'switch'
-switch (result.operator) {
-  case ('Addition'):
-  console.log (result.firstNumber + result.secondNumber)
-  break;
-  case ('Subtraction') :
-  console.log (result.firstNumber - result.secondNumber)
-  break;
-  case ('Multiplication') :
-    console.log (result.firstNumber * result.secondNumber)
-    break;
-  case ('Division'):
-    console.log(result.firstNumber / result.secondNumber)
-    break;
-  default:
-    console.log('Select an arithmatic function.')
-    break;
-}
+// switch (result.operator) {
+//   case ('Addition'):
+//   console.log (result.firstNumber + result.secondNumber)
+//   break;
+//   case ('Subtraction') :
+//   console.log (result.firstNumber - result.secondNumber)
+//   break;
+//   case ('Multiplication') :
+//     console.log (result.firstNumber * result.secondNumber)
+//     break;
+//   case ('Division'):
+//     console.log(result.firstNumber / result.secondNumber)
+//     break;
+//   default:
+//     console.log('Select an arithmatic function.')
+//     break;
+// }
 // program ends here.
