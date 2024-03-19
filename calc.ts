@@ -1,5 +1,6 @@
- 
-import inquirer from "inquirer";
+  //#! /usr/bin/env node
+
+  import inquirer from "inquirer";
 
 const result = await inquirer.prompt([
 
@@ -13,21 +14,30 @@ name: "operator",
 choices: ["Addition", "Subtraction", "Multiplication", "Division"],
 },
 ]);
-// conditional statement
-if (result.operator === "Addition") {
-console.log(result.firstNumber + result.secondNumber)
-}
-else if (result.operator === "Subtraction")  {
 
-  console.log(result.firstNumber - result.secondNumber);
-} 
-else if (result.operator === "Multiplication") {
-  console.log(result.firstNumber * result.secondNumber);
-} 
-else if (result.operator === "Division") {
+(result.operator === "Addition") ? console.log(result.firstNumber + result.secondNumber) 
+: console.log("Select operator.");
+(result.operator === "Subtraction") ? console.log(result.firstNumber - result.secondNumber) 
+: console.log("Select operator.");
+(result.operator === "Multiplication") ? console.log(result.firstNumber * result.secondNumber) 
+: console.log("Select operator.");
+(result.operator === "Division") ? console.log(result.firstNumber / result.secondNumber) 
+: console.log("Select operator.");
+// conditional statement
+// if (result.operator === "Addition") {
+// console.log(result.firstNumber + result.secondNumber)
+// }
+// else if (result.operator === "Subtraction")  {
+
+//   console.log(result.firstNumber - result.secondNumber);
+// } 
+// else if (result.operator === "Multiplication") {
+//   console.log(result.firstNumber * result.secondNumber);
+// } 
+// else if (result.operator === "Division") {
    
-console.log(result.firstNumber / result.secondNumber);}
-else { console.log("Please select a valid operator")}
+// console.log(result.firstNumber / result.secondNumber);}
+// else { console.log("Please select a valid operator")}
 
 // Conditional statement using 'switch'
 // switch (result.operator) {
