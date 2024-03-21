@@ -1,6 +1,6 @@
 {
   "name": "zs01-cml-calculator",
-  "version": "1.2.1",
+  "version": "1.3.1",
   "type": "module",
   "description": "Simple calculator program.",
   "main": "calc.js",
